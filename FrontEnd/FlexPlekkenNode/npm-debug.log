@@ -1,0 +1,356 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'oracle' ]
+2 info using npm@1.3.17
+3 info using node@v0.10.23
+4 verbose node symlink C:\Program Files\nodejs\\node.exe
+5 verbose cache add [ 'oracle', null ]
+6 verbose cache add name=undefined spec="oracle" args=["oracle",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: 'oracle',
+7 verbose parsed url   path: 'oracle',
+7 verbose parsed url   href: 'oracle' }
+8 silly lockFile 431364b6-oracle oracle
+9 verbose lock oracle C:\Users\menno_h\AppData\Roaming\npm-cache\431364b6-oracle.lock
+10 silly lockFile 431364b6-oracle oracle
+11 silly lockFile 431364b6-oracle oracle
+12 verbose addNamed [ 'oracle', '' ]
+13 verbose addNamed [ null, '*' ]
+14 silly lockFile a4fb3172-oracle oracle@
+15 verbose lock oracle@ C:\Users\menno_h\AppData\Roaming\npm-cache\a4fb3172-oracle.lock
+16 silly addNameRange { name: 'oracle', range: '*', hasData: false }
+17 verbose url raw oracle
+18 verbose url resolving [ 'https://registry.npmjs.org/', './oracle' ]
+19 verbose url resolved https://registry.npmjs.org/oracle
+20 info trying registry request attempt 1 at 20:50:31
+21 http GET https://registry.npmjs.org/oracle
+22 http 200 https://registry.npmjs.org/oracle
+23 silly registry.get cb [ 200,
+23 silly registry.get   { date: 'Mon, 26 May 2014 18:50:32 GMT',
+23 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R14B04)',
+23 silly registry.get     etag: '"PRSKD9UQ6AEGOCTF090W1KF7"',
+23 silly registry.get     'content-type': 'application/json',
+23 silly registry.get     via: '1.1 varnish',
+23 silly registry.get     'cache-control': 'max-age=1',
+23 silly registry.get     'content-length': '21680',
+23 silly registry.get     'accept-ranges': 'bytes',
+23 silly registry.get     age: '12179',
+23 silly registry.get     'x-served-by': 'cache-v36-ASH, cache-fra1233-FRA',
+23 silly registry.get     'x-cache': 'MISS, MISS',
+23 silly registry.get     'x-cache-hits': '0, 0',
+23 silly registry.get     'x-timer': 'S1401130231.918979,VS0,VE100',
+23 silly registry.get     vary: 'Accept',
+23 silly registry.get     'keep-alive': 'timeout=10, max=50',
+23 silly registry.get     connection: 'Keep-Alive' } ]
+24 silly addNameRange number 2 { name: 'oracle', range: '*', hasData: true }
+25 silly addNameRange versions [ 'oracle',
+25 silly addNameRange   [ '0.1.0',
+25 silly addNameRange     '0.1.1',
+25 silly addNameRange     '0.1.2',
+25 silly addNameRange     '0.1.3',
+25 silly addNameRange     '0.2.0',
+25 silly addNameRange     '0.3.0',
+25 silly addNameRange     '0.3.1',
+25 silly addNameRange     '0.3.2',
+25 silly addNameRange     '0.3.3',
+25 silly addNameRange     '0.3.4',
+25 silly addNameRange     '0.3.5',
+25 silly addNameRange     '0.3.6' ] ]
+26 verbose addNamed [ 'oracle', '0.3.6' ]
+27 verbose addNamed [ '0.3.6', '0.3.6' ]
+28 silly lockFile 57fab89f-oracle-0-3-6 oracle@0.3.6
+29 verbose lock oracle@0.3.6 C:\Users\menno_h\AppData\Roaming\npm-cache\57fab89f-oracle-0-3-6.lock
+30 silly lockFile 66278927-pmjs-org-oracle-oracle-0-3-6-tgz https://registry.npmjs.org/oracle/-/oracle-0.3.6.tgz
+31 verbose lock https://registry.npmjs.org/oracle/-/oracle-0.3.6.tgz C:\Users\menno_h\AppData\Roaming\npm-cache\66278927-pmjs-org-oracle-oracle-0-3-6-tgz.lock
+32 verbose addRemoteTarball [ 'https://registry.npmjs.org/oracle/-/oracle-0.3.6.tgz',
+32 verbose addRemoteTarball   '59ad5057dbb75f863100d63fddaf7c027dcddf82' ]
+33 info retry fetch attempt 1 at 20:50:32
+34 verbose fetch to= C:\Users\menno_h\AppData\Local\Temp\npm-7308-Rr_s2cEr\1401130232115-0.530269525712356\tmp.tgz
+35 http GET https://registry.npmjs.org/oracle/-/oracle-0.3.6.tgz
+36 http 200 https://registry.npmjs.org/oracle/-/oracle-0.3.6.tgz
+37 verbose tar unpack C:\Users\menno_h\AppData\Local\Temp\npm-7308-Rr_s2cEr\1401130232115-0.530269525712356\tmp.tgz
+38 silly lockFile ac4acd17-232115-0-530269525712356-package tar://C:\Users\menno_h\AppData\Local\Temp\npm-7308-Rr_s2cEr\1401130232115-0.530269525712356\package
+39 verbose lock tar://C:\Users\menno_h\AppData\Local\Temp\npm-7308-Rr_s2cEr\1401130232115-0.530269525712356\package C:\Users\menno_h\AppData\Roaming\npm-cache\ac4acd17-232115-0-530269525712356-package.lock
+40 silly lockFile f8200a04-232115-0-530269525712356-tmp-tgz tar://C:\Users\menno_h\AppData\Local\Temp\npm-7308-Rr_s2cEr\1401130232115-0.530269525712356\tmp.tgz
+41 verbose lock tar://C:\Users\menno_h\AppData\Local\Temp\npm-7308-Rr_s2cEr\1401130232115-0.530269525712356\tmp.tgz C:\Users\menno_h\AppData\Roaming\npm-cache\f8200a04-232115-0-530269525712356-tmp-tgz.lock
+42 silly gunzTarPerm modes [ '755', '644' ]
+43 silly gunzTarPerm extractEntry package.json
+44 silly gunzTarPerm extractEntry .npmignore
+45 silly gunzTarPerm extractEntry README.md
+46 silly gunzTarPerm extractEntry LICENSE
+47 silly gunzTarPerm extractEntry index.js
+48 silly gunzTarPerm extractEntry INSTALL.md
+49 silly gunzTarPerm extractEntry lib/oracle.js
+50 silly gunzTarPerm extractEntry binding.gyp
+51 silly gunzTarPerm extractEntry src/outParam.h
+52 silly gunzTarPerm extractEntry src/commitBaton.h
+53 silly gunzTarPerm extractEntry src/connection.h
+54 silly gunzTarPerm extractEntry src/executeBaton.cpp
+55 silly gunzTarPerm extractEntry src/executeBaton.h
+56 silly gunzTarPerm extractEntry src/nodeOracleException.h
+57 silly gunzTarPerm extractEntry src/oracle_bindings.cpp
+58 silly gunzTarPerm extractEntry src/oracle_bindings.h
+59 silly gunzTarPerm extractEntry src/outParam.cpp
+60 silly gunzTarPerm extractEntry src/connection.cpp
+61 silly gunzTarPerm extractEntry src/reader.cpp
+62 silly gunzTarPerm extractEntry src/reader.h
+63 silly gunzTarPerm extractEntry src/readerBaton.h
+64 silly gunzTarPerm extractEntry src/rollbackBaton.h
+65 silly gunzTarPerm extractEntry src/statement.cpp
+66 silly gunzTarPerm extractEntry src/statement.h
+67 silly gunzTarPerm extractEntry src/statementBaton.h
+68 silly gunzTarPerm extractEntry src/utils.h
+69 silly gunzTarPerm extractEntry test/integration.js
+70 silly gunzTarPerm extractEntry test/outparams.js
+71 silly gunzTarPerm extractEntry test/prepare.js
+72 silly gunzTarPerm extractEntry test/reader.js
+73 silly gunzTarPerm extractEntry tests-settings.json
+74 silly lockFile ac4acd17-232115-0-530269525712356-package tar://C:\Users\menno_h\AppData\Local\Temp\npm-7308-Rr_s2cEr\1401130232115-0.530269525712356\package
+75 silly lockFile ac4acd17-232115-0-530269525712356-package tar://C:\Users\menno_h\AppData\Local\Temp\npm-7308-Rr_s2cEr\1401130232115-0.530269525712356\package
+76 silly lockFile f8200a04-232115-0-530269525712356-tmp-tgz tar://C:\Users\menno_h\AppData\Local\Temp\npm-7308-Rr_s2cEr\1401130232115-0.530269525712356\tmp.tgz
+77 silly lockFile f8200a04-232115-0-530269525712356-tmp-tgz tar://C:\Users\menno_h\AppData\Local\Temp\npm-7308-Rr_s2cEr\1401130232115-0.530269525712356\tmp.tgz
+78 verbose tar pack [ 'C:\\Users\\menno_h\\AppData\\Roaming\\npm-cache\\oracle\\0.3.6\\package.tgz',
+78 verbose tar pack   'C:\\Users\\menno_h\\AppData\\Local\\Temp\\npm-7308-Rr_s2cEr\\1401130232115-0.530269525712356\\package' ]
+79 verbose tarball C:\Users\menno_h\AppData\Roaming\npm-cache\oracle\0.3.6\package.tgz
+80 verbose folder C:\Users\menno_h\AppData\Local\Temp\npm-7308-Rr_s2cEr\1401130232115-0.530269525712356\package
+81 silly lockFile ac4acd17-232115-0-530269525712356-package tar://C:\Users\menno_h\AppData\Local\Temp\npm-7308-Rr_s2cEr\1401130232115-0.530269525712356\package
+82 verbose lock tar://C:\Users\menno_h\AppData\Local\Temp\npm-7308-Rr_s2cEr\1401130232115-0.530269525712356\package C:\Users\menno_h\AppData\Roaming\npm-cache\ac4acd17-232115-0-530269525712356-package.lock
+83 silly lockFile 8dd943b3-m-cache-oracle-0-3-6-package-tgz tar://C:\Users\menno_h\AppData\Roaming\npm-cache\oracle\0.3.6\package.tgz
+84 verbose lock tar://C:\Users\menno_h\AppData\Roaming\npm-cache\oracle\0.3.6\package.tgz C:\Users\menno_h\AppData\Roaming\npm-cache\8dd943b3-m-cache-oracle-0-3-6-package-tgz.lock
+85 silly lockFile ac4acd17-232115-0-530269525712356-package tar://C:\Users\menno_h\AppData\Local\Temp\npm-7308-Rr_s2cEr\1401130232115-0.530269525712356\package
+86 silly lockFile ac4acd17-232115-0-530269525712356-package tar://C:\Users\menno_h\AppData\Local\Temp\npm-7308-Rr_s2cEr\1401130232115-0.530269525712356\package
+87 silly lockFile 8dd943b3-m-cache-oracle-0-3-6-package-tgz tar://C:\Users\menno_h\AppData\Roaming\npm-cache\oracle\0.3.6\package.tgz
+88 silly lockFile 8dd943b3-m-cache-oracle-0-3-6-package-tgz tar://C:\Users\menno_h\AppData\Roaming\npm-cache\oracle\0.3.6\package.tgz
+89 silly lockFile e4b129b6-g-npm-cache-oracle-0-3-6-package C:\Users\menno_h\AppData\Roaming\npm-cache\oracle\0.3.6\package
+90 verbose lock C:\Users\menno_h\AppData\Roaming\npm-cache\oracle\0.3.6\package C:\Users\menno_h\AppData\Roaming\npm-cache\e4b129b6-g-npm-cache-oracle-0-3-6-package.lock
+91 silly lockFile e4b129b6-g-npm-cache-oracle-0-3-6-package C:\Users\menno_h\AppData\Roaming\npm-cache\oracle\0.3.6\package
+92 silly lockFile e4b129b6-g-npm-cache-oracle-0-3-6-package C:\Users\menno_h\AppData\Roaming\npm-cache\oracle\0.3.6\package
+93 verbose tar unpack C:\Users\menno_h\AppData\Roaming\npm-cache\oracle\0.3.6\package.tgz
+94 silly lockFile 0f45b11d-g-npm-cache-oracle-0-3-6-package tar://C:\Users\menno_h\AppData\Roaming\npm-cache\oracle\0.3.6\package
+95 verbose lock tar://C:\Users\menno_h\AppData\Roaming\npm-cache\oracle\0.3.6\package C:\Users\menno_h\AppData\Roaming\npm-cache\0f45b11d-g-npm-cache-oracle-0-3-6-package.lock
+96 silly lockFile 8dd943b3-m-cache-oracle-0-3-6-package-tgz tar://C:\Users\menno_h\AppData\Roaming\npm-cache\oracle\0.3.6\package.tgz
+97 verbose lock tar://C:\Users\menno_h\AppData\Roaming\npm-cache\oracle\0.3.6\package.tgz C:\Users\menno_h\AppData\Roaming\npm-cache\8dd943b3-m-cache-oracle-0-3-6-package-tgz.lock
+98 silly gunzTarPerm modes [ '755', '644' ]
+99 silly gunzTarPerm extractEntry package.json
+100 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+101 silly gunzTarPerm extractEntry .npmignore
+102 silly gunzTarPerm modified mode [ '.npmignore', 438, 420 ]
+103 silly gunzTarPerm extractEntry README.md
+104 silly gunzTarPerm modified mode [ 'README.md', 438, 420 ]
+105 silly gunzTarPerm extractEntry LICENSE
+106 silly gunzTarPerm modified mode [ 'LICENSE', 438, 420 ]
+107 silly gunzTarPerm extractEntry index.js
+108 silly gunzTarPerm modified mode [ 'index.js', 438, 420 ]
+109 silly gunzTarPerm extractEntry lib/oracle.js
+110 silly gunzTarPerm modified mode [ 'lib/oracle.js', 438, 420 ]
+111 silly gunzTarPerm extractEntry binding.gyp
+112 silly gunzTarPerm modified mode [ 'binding.gyp', 438, 420 ]
+113 silly gunzTarPerm extractEntry INSTALL.md
+114 silly gunzTarPerm modified mode [ 'INSTALL.md', 438, 420 ]
+115 silly gunzTarPerm extractEntry src/outParam.h
+116 silly gunzTarPerm modified mode [ 'src/outParam.h', 438, 420 ]
+117 silly gunzTarPerm extractEntry src/commitBaton.h
+118 silly gunzTarPerm modified mode [ 'src/commitBaton.h', 438, 420 ]
+119 silly gunzTarPerm extractEntry src/connection.h
+120 silly gunzTarPerm modified mode [ 'src/connection.h', 438, 420 ]
+121 silly gunzTarPerm extractEntry src/executeBaton.cpp
+122 silly gunzTarPerm modified mode [ 'src/executeBaton.cpp', 438, 420 ]
+123 silly gunzTarPerm extractEntry src/executeBaton.h
+124 silly gunzTarPerm modified mode [ 'src/executeBaton.h', 438, 420 ]
+125 silly gunzTarPerm extractEntry src/nodeOracleException.h
+126 silly gunzTarPerm modified mode [ 'src/nodeOracleException.h', 438, 420 ]
+127 silly gunzTarPerm extractEntry src/oracle_bindings.cpp
+128 silly gunzTarPerm modified mode [ 'src/oracle_bindings.cpp', 438, 420 ]
+129 silly gunzTarPerm extractEntry src/oracle_bindings.h
+130 silly gunzTarPerm modified mode [ 'src/oracle_bindings.h', 438, 420 ]
+131 silly gunzTarPerm extractEntry src/outParam.cpp
+132 silly gunzTarPerm modified mode [ 'src/outParam.cpp', 438, 420 ]
+133 silly gunzTarPerm extractEntry src/connection.cpp
+134 silly gunzTarPerm modified mode [ 'src/connection.cpp', 438, 420 ]
+135 silly gunzTarPerm extractEntry src/reader.cpp
+136 silly gunzTarPerm modified mode [ 'src/reader.cpp', 438, 420 ]
+137 silly gunzTarPerm extractEntry src/reader.h
+138 silly gunzTarPerm modified mode [ 'src/reader.h', 438, 420 ]
+139 silly gunzTarPerm extractEntry src/readerBaton.h
+140 silly gunzTarPerm modified mode [ 'src/readerBaton.h', 438, 420 ]
+141 silly gunzTarPerm extractEntry src/rollbackBaton.h
+142 silly gunzTarPerm modified mode [ 'src/rollbackBaton.h', 438, 420 ]
+143 silly gunzTarPerm extractEntry src/statement.cpp
+144 silly gunzTarPerm modified mode [ 'src/statement.cpp', 438, 420 ]
+145 silly gunzTarPerm extractEntry src/statement.h
+146 silly gunzTarPerm modified mode [ 'src/statement.h', 438, 420 ]
+147 silly gunzTarPerm extractEntry src/statementBaton.h
+148 silly gunzTarPerm modified mode [ 'src/statementBaton.h', 438, 420 ]
+149 silly gunzTarPerm extractEntry src/utils.h
+150 silly gunzTarPerm modified mode [ 'src/utils.h', 438, 420 ]
+151 silly gunzTarPerm extractEntry test/integration.js
+152 silly gunzTarPerm modified mode [ 'test/integration.js', 438, 420 ]
+153 silly gunzTarPerm extractEntry test/outparams.js
+154 silly gunzTarPerm modified mode [ 'test/outparams.js', 438, 420 ]
+155 silly gunzTarPerm extractEntry test/prepare.js
+156 silly gunzTarPerm modified mode [ 'test/prepare.js', 438, 420 ]
+157 silly gunzTarPerm extractEntry test/reader.js
+158 silly gunzTarPerm modified mode [ 'test/reader.js', 438, 420 ]
+159 silly gunzTarPerm extractEntry tests-settings.json
+160 silly gunzTarPerm modified mode [ 'tests-settings.json', 438, 420 ]
+161 silly lockFile 0f45b11d-g-npm-cache-oracle-0-3-6-package tar://C:\Users\menno_h\AppData\Roaming\npm-cache\oracle\0.3.6\package
+162 silly lockFile 0f45b11d-g-npm-cache-oracle-0-3-6-package tar://C:\Users\menno_h\AppData\Roaming\npm-cache\oracle\0.3.6\package
+163 silly lockFile 8dd943b3-m-cache-oracle-0-3-6-package-tgz tar://C:\Users\menno_h\AppData\Roaming\npm-cache\oracle\0.3.6\package.tgz
+164 silly lockFile 8dd943b3-m-cache-oracle-0-3-6-package-tgz tar://C:\Users\menno_h\AppData\Roaming\npm-cache\oracle\0.3.6\package.tgz
+165 verbose chmod C:\Users\menno_h\AppData\Roaming\npm-cache\oracle\0.3.6\package.tgz 644
+166 silly chown skipping for windows C:\Users\menno_h\AppData\Roaming\npm-cache\oracle\0.3.6\package.tgz
+167 silly lockFile 66278927-pmjs-org-oracle-oracle-0-3-6-tgz https://registry.npmjs.org/oracle/-/oracle-0.3.6.tgz
+168 silly lockFile 66278927-pmjs-org-oracle-oracle-0-3-6-tgz https://registry.npmjs.org/oracle/-/oracle-0.3.6.tgz
+169 silly lockFile 57fab89f-oracle-0-3-6 oracle@0.3.6
+170 silly lockFile 57fab89f-oracle-0-3-6 oracle@0.3.6
+171 silly lockFile a4fb3172-oracle oracle@
+172 silly lockFile a4fb3172-oracle oracle@
+173 silly resolved [ { name: 'oracle',
+173 silly resolved     description: 'Oracle database driver',
+173 silly resolved     keywords: [ 'database', 'db', 'oracle' ],
+173 silly resolved     homepage: 'https://github.com/joeferner/node-oracle',
+173 silly resolved     license: 'MIT',
+173 silly resolved     version: '0.3.6',
+173 silly resolved     engines: { node: '>=0.6.0' },
+173 silly resolved     maintainers: [ [Object], [Object], [Object] ],
+173 silly resolved     bugs: { url: 'https://github.com/joeferner/node-oracle/issues' },
+173 silly resolved     repository:
+173 silly resolved      { type: 'git',
+173 silly resolved        url: 'git://github.com/joeferner/node-oracle.git' },
+173 silly resolved     dependencies: {},
+173 silly resolved     devDependencies: { nodeunit: '~>0.8.0' },
+173 silly resolved     scripts:
+173 silly resolved      { test: 'nodeunit test/integration.js test/outparams.js',
+173 silly resolved        install: 'node-gyp rebuild' },
+173 silly resolved     main: './index.js',
+173 silly resolved     gypfile: true,
+173 silly resolved     readme: '# Oracle driver for Node.js\n\nA driver to connect to an Oracle database from node.js, leveraging the "Oracle C++ Call Interface" (OCCI)\nfor connectivity.  This is most commonly obtained as part of the Oracle Instant Client.\n\nIt is known to work with Oracle 10, 11, and 12, and has been mostly tested on Linux, but should also work on OS X and\nWindows 7+\n\n\n# Basic installation\n\n(See INSTALL.md for complete instructions for your platform.)\n\n* Prerequisites:\n  * Python 2.7 (*not* v3.x), used by node-gyp\n  * C++ Compiler toolchain (GCC, Visual Studio or similar)\n* Download the latest Oracle Instant Client Basic and SDK, and extract to the same directory.\n* Set environment variables:\n\n\t```\nOCI_LIB_DIR=/path/to/instant_client\nOCI_INCLUDE_DIR=/path/to/instant_client/sdk/include\nOCI_VERSION=<10, 11, or 12> # Integer. Optional, defaults to \'11\'\nNLS_LANG=.UTF8 # Optional, but required to support international characters\n\t```\n* Create symlinks for libclntsh and libocci in the Instant Client directory (see INSTALL.md)\n* (Linux) Install libaio\n* Configure the dynamic library path on your platform to include $OCI_LIB_DIR (see INSTALL.md)\n* `npm install oracle` to get the latest from npmjs.org\n\n\n# Examples\n\n### Basic example\n\n```javascript\nvar oracle = require(\'oracle\');\n\nvar connectData = {\n\thostname: "localhost",\n\tport: 1521,\n\tdatabase: "xe", // System ID (SID)\n\tuser: "oracle",\n\tpassword: "oracle"\n}\n\noracle.connect(connectData, function(err, connection) {\n\tif (err) { console.log("Error connecting to db:", err); return; }\n\n\tconnection.execute("SELECT systimestamp FROM dual", [], function(err, results) {\n\t\tif (err) { console.log("Error executing query:", err); return; }\n\n\t\tconsole.log(results);\n\t\tconnection.close(); // call only when query is finished executing\n\t});\n});\n```\n\n### Alternative connection using TNS\nReplace the `connectData` object above with one of the following.\n\nWithout tnsnames.ora file:\n\n```javascript\nvar connString = "(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=localhost)(PORT=1521))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=xe)))";\nvar connectData = { "tns": connString, "user": "test", "password": "test" };\n```\nWith tnsnames.ora file:\n\n```text\nDEV =\n\t(DESCRIPTION =\n\t\t(ADDRESS = (PROTOCOL = TCP)(HOST = localhost)(PORT = 1521))\n\t\t(CONNECT_DATA =\n\t\t\t(SERVER = DEDICATED)\n\t\t\t(SERVICE_NAME = orcl)\n\t\t)\n\t)\n```\n\n```javascript\nvar connectData = { "tns": "DEV", "user": "test", "password": "test" };\n```\n\n### Connection options\n\nThe following options can be set on the connection:\n\n* `connection.setAutoCommit(true/false);`\n* `connection.setPrefetchRowCount(count);` Should improve performance with large result sets\n\n### Out Params\nFollowing the basic example above, a query using a return parameter looks like this:\n\n```javascript\n\t...\n\tconnection.execute(\n\t\t"INSERT INTO person (name) VALUES (:1) RETURNING id INTO :2",\n\t\t[\'joe ferner\', new oracle.OutParam()],\n\t\tfunction(err, results) {\n\t\t\tif ( err ) { ... } \n\t\t\t// results.updateCount = 1\n\t\t\t// results.returnParam = the id of the person just inserted\n\t\t\tconnection.close();\n\t\t}\n\t);\n\t...\n```\n\nThe following OUT Params are supported in Stored Procedures:\n\n* `OCCIINT`\n* `OCCISTRING`\n* `OCCIDOUBLE`\n* `OCCIFLOAT`\n* `OCCICURSOR`\n* `OCCICLOB`\n* `OCCIDATE`\n* `OCCITIMESTAMP`\n* `OCCINUMBER`\n* `OCCIBLOB`\n\nSpecify the return type in the OutParam() constructor:\n\n```javascript\nconnection.execute("call myProc(:1,:2)", ["nodejs", new oracle.OutParam(oracle.OCCISTRING)], ...\n```\n\nWhen using `OCCISTRING`, the size can optionally be specified (default is 200 chars):\n\n```javascript\nconnection.execute("call myProc(:1,:2)", ["nodejs", new oracle.OutParam(oracle.OCCISTRING, {size: 1000})], ...\n```\nSee tests for more examples.\n\n### In/Out Params\nThe following INOUT param types are supported:\n\n* `OCCIINT`\n* `OCCISTRING`\n* `OCCIDOUBLE`\n* `OCCIFLOAT`\n* `OCCINUMBER`\n\nINOUT params are used like normal OUT params, with the optional \'in\' paramater value being passed in the options object:\n\n```javascript\nconnection.execute("call myProc(:1)", [new oracle.OutParam(oracle.OCCIINT, {in: 42})], ...\n```\n\n### Validate connection\nTo validate whether the connection is still established after some time:\n\n```javascript\nif (!connection.isConnected()) {\n\t// Do something like retire this connection from a pool\n}\n```\n\n### Dates\nFor DATE and TIMESTAMP types, the driver uses the UTC methods from the Javascript Date object. This means the DATE\nvalue stored will match the value of `new Date().toISOString()` on your client machine.  Consider this example\nfor a client machine in "GMT-0700":\n\nTable schema:\n\n```sql\nCREATE TABLE date_test (mydate DATE)\n```\n\nJavascript code:\n\n```javascript\n...\n\tvar date = new Date(2013, 11, 24, 18, 0, 1);  // Client timezone dependent\n\tconsole.log(date.toString());      // Tue Dec 24 2013 18:00:01 GMT-0700 (MST)\n\tconsole.log(date.toISOString());   // 2013-12-25T01:00:01.000Z\n\n\tconnection.execute(\n\t\t"INSERT INTO date_test (mydate) VALUES (:1) " +\n\t\t\t"RETURNING mydate, to_char(mydate, \'YYYY-MM-DD HH24:MI:SS\') INTO :2, :3",\n\t\t[date, new oracle.OutParam(oracle.OCCIDATE), new oracle.OutParam(oracle.OCCISTRING)],\n\t\tfunction(err, results) {\n\t\t\tconsole.log(results.returnParam.toString());  // Tue Dec 24 2013 18:00:01 GMT-0700 (MST)\n\t\t\tconsole.log(results.returnParam1);            // 2013-12-25 01:00:01\n\t\t}\n\t);\n...\n```\n\n### Querying large tables\n\nTo query large tables you should use a _reader_:\n\n* `reader = connection.reader(sql, args)`: creates a reader\n* `reader.nextRow(callback)`: returns the next row through the callback\n* `reader.nextRows(count, callback)` returns the next `count` rows through the callback. `count` is optional and `nextRows` uses the prefetch row count when `count` is omitted.\n* `connection.setPrefetchRowCount(count)`: configures the prefetch row count for the connection. Prefetching can have a dramatic impact on performance but uses more memory. \n\nExample:\n\n```javascript\nconnection.setPrefetchRowCount(50);\nvar reader = connection.reader("SELECT * FROM auditlogs", []);\n\nfunction doRead(cb) {\n\treader.nextRow(function(err, row) {\n\t\tif (err) return cb(err);\n\t\tif (row) {\n\t\t\t// do something with row\n\t\t\tconsole.log("got " + JSON.stringify(row));\n\t\t\t// recurse to read next record\n\t\t\treturn doRead(cb)\n\t\t} else {\n\t\t\t// we are done\n\t\t\treturn cb();\n\t\t}\n\t})\n}\n\ndoRead(function(err) {\n\tif (err) throw err; // or log it\n\tconsole.log("all records processed");\n});\n```\n\n### Large inserts or updates\n\nTo insert or update a large number of records you should use _prepared statements_ rather than individual `execute` calls on the connection object:\n\n* `statement = connection.prepare(sql)`: creates a prepared statement.\n* `statement.execute(args, callback)`: executes the prepared statement with the values in `args`. You can call this repeatedly on the same `statement`.\n\nExample:\n\n```javascript\n\nfunction doInsert(stmt, records, cb) {\n\tif (records.length > 0) {\n\t\tstmt.execute([records.shift()], function(err, count) {\n\t\t\tif (err) return cb(err);\n\t\t\tif (count !== 1) return cb(new Error("bad count: " + count));\n\t\t\t// recurse with remaining records\n\t\t\tdoInsert(stmt, records, cb);\n\t\t});\n\t} else {\n\t\t// we are done\n\t\treturn cb();\n\t}\n}\n\nvar statement = connection.prepare("INSERT INTO users (id, firstName, lastName) VALUES (:1, :2, :3)");\ndoInsert(statement, users, function(err) {\n\tif (err) throw err; // or log it\n\tconsole.log("all records inserted");\t\n});\n```\n\n# Limitations/Caveats\n\n* Currently no native support for connection pooling (forthcoming; use generic-pool for now.)\n* Currently no support for column type "Timestamp With Timezone" (Issue #67)\n* While the Oracle TIMESTAMP type provides fractional seconds up to 9 digits (nanoseconds), this will be rounded\n  to the nearest millisecond when converted to a Javascript date (a _data loss_).\n\n# Development\n* Clone the source repo\n* Follow the installation instructions to prepare your environment (using Oracle Instant Client)\n* Run `npm install` or `npm test` in the root of the source directory\n* Point to an Oracle instance of your choice.  The free Oracle Express edition works well:\n  * Oracle Express 11g: http://www.oracle.com/technetwork/database/database-technologies/express-edition/downloads/index.htmlDownload\n* Debugging:\n  * Compile node with debug symbols\n  * Use gdb/ddd or another C++ debugger to step through\n',
+173 silly resolved     readmeFilename: 'README.md',
+173 silly resolved     _id: 'oracle@0.3.6',
+173 silly resolved     dist: { shasum: 'b408dd2b5f3efbde76adb00d91c9669225c96c0f' },
+173 silly resolved     _from: 'oracle@',
+173 silly resolved     _resolved: 'https://registry.npmjs.org/oracle/-/oracle-0.3.6.tgz' } ]
+174 info install oracle@0.3.6 into C:\Users\menno_h\Documents\Aptana Studio 3 Workspace\FlexPlekkenNode
+175 info installOne oracle@0.3.6
+176 info C:\Users\menno_h\Documents\Aptana Studio 3 Workspace\FlexPlekkenNode\node_modules\oracle unbuild
+177 verbose tar unpack C:\Users\menno_h\AppData\Roaming\npm-cache\oracle\0.3.6\package.tgz
+178 silly lockFile 2e7bc1b3-xPlekkenNode-node-modules-oracle tar://C:\Users\menno_h\Documents\Aptana Studio 3 Workspace\FlexPlekkenNode\node_modules\oracle
+179 verbose lock tar://C:\Users\menno_h\Documents\Aptana Studio 3 Workspace\FlexPlekkenNode\node_modules\oracle C:\Users\menno_h\AppData\Roaming\npm-cache\2e7bc1b3-xPlekkenNode-node-modules-oracle.lock
+180 silly lockFile 8dd943b3-m-cache-oracle-0-3-6-package-tgz tar://C:\Users\menno_h\AppData\Roaming\npm-cache\oracle\0.3.6\package.tgz
+181 verbose lock tar://C:\Users\menno_h\AppData\Roaming\npm-cache\oracle\0.3.6\package.tgz C:\Users\menno_h\AppData\Roaming\npm-cache\8dd943b3-m-cache-oracle-0-3-6-package-tgz.lock
+182 silly gunzTarPerm modes [ '755', '644' ]
+183 silly gunzTarPerm extractEntry package.json
+184 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+185 silly gunzTarPerm extractEntry .npmignore
+186 silly gunzTarPerm modified mode [ '.npmignore', 438, 420 ]
+187 silly gunzTarPerm extractEntry README.md
+188 silly gunzTarPerm modified mode [ 'README.md', 438, 420 ]
+189 silly gunzTarPerm extractEntry LICENSE
+190 silly gunzTarPerm modified mode [ 'LICENSE', 438, 420 ]
+191 silly gunzTarPerm extractEntry index.js
+192 silly gunzTarPerm modified mode [ 'index.js', 438, 420 ]
+193 silly gunzTarPerm extractEntry lib/oracle.js
+194 silly gunzTarPerm modified mode [ 'lib/oracle.js', 438, 420 ]
+195 silly gunzTarPerm extractEntry binding.gyp
+196 silly gunzTarPerm modified mode [ 'binding.gyp', 438, 420 ]
+197 silly gunzTarPerm extractEntry INSTALL.md
+198 silly gunzTarPerm modified mode [ 'INSTALL.md', 438, 420 ]
+199 silly gunzTarPerm extractEntry src/outParam.h
+200 silly gunzTarPerm modified mode [ 'src/outParam.h', 438, 420 ]
+201 silly gunzTarPerm extractEntry src/commitBaton.h
+202 silly gunzTarPerm modified mode [ 'src/commitBaton.h', 438, 420 ]
+203 silly gunzTarPerm extractEntry src/connection.h
+204 silly gunzTarPerm modified mode [ 'src/connection.h', 438, 420 ]
+205 silly gunzTarPerm extractEntry src/executeBaton.cpp
+206 silly gunzTarPerm modified mode [ 'src/executeBaton.cpp', 438, 420 ]
+207 silly gunzTarPerm extractEntry src/executeBaton.h
+208 silly gunzTarPerm modified mode [ 'src/executeBaton.h', 438, 420 ]
+209 silly gunzTarPerm extractEntry src/nodeOracleException.h
+210 silly gunzTarPerm modified mode [ 'src/nodeOracleException.h', 438, 420 ]
+211 silly gunzTarPerm extractEntry src/oracle_bindings.cpp
+212 silly gunzTarPerm modified mode [ 'src/oracle_bindings.cpp', 438, 420 ]
+213 silly gunzTarPerm extractEntry src/oracle_bindings.h
+214 silly gunzTarPerm modified mode [ 'src/oracle_bindings.h', 438, 420 ]
+215 silly gunzTarPerm extractEntry src/outParam.cpp
+216 silly gunzTarPerm modified mode [ 'src/outParam.cpp', 438, 420 ]
+217 silly gunzTarPerm extractEntry src/connection.cpp
+218 silly gunzTarPerm modified mode [ 'src/connection.cpp', 438, 420 ]
+219 silly gunzTarPerm extractEntry src/reader.cpp
+220 silly gunzTarPerm modified mode [ 'src/reader.cpp', 438, 420 ]
+221 silly gunzTarPerm extractEntry src/reader.h
+222 silly gunzTarPerm modified mode [ 'src/reader.h', 438, 420 ]
+223 silly gunzTarPerm extractEntry src/readerBaton.h
+224 silly gunzTarPerm modified mode [ 'src/readerBaton.h', 438, 420 ]
+225 silly gunzTarPerm extractEntry src/rollbackBaton.h
+226 silly gunzTarPerm modified mode [ 'src/rollbackBaton.h', 438, 420 ]
+227 silly gunzTarPerm extractEntry src/statement.cpp
+228 silly gunzTarPerm modified mode [ 'src/statement.cpp', 438, 420 ]
+229 silly gunzTarPerm extractEntry src/statement.h
+230 silly gunzTarPerm modified mode [ 'src/statement.h', 438, 420 ]
+231 silly gunzTarPerm extractEntry src/statementBaton.h
+232 silly gunzTarPerm modified mode [ 'src/statementBaton.h', 438, 420 ]
+233 silly gunzTarPerm extractEntry src/utils.h
+234 silly gunzTarPerm modified mode [ 'src/utils.h', 438, 420 ]
+235 silly gunzTarPerm extractEntry test/integration.js
+236 silly gunzTarPerm modified mode [ 'test/integration.js', 438, 420 ]
+237 silly gunzTarPerm extractEntry test/outparams.js
+238 silly gunzTarPerm modified mode [ 'test/outparams.js', 438, 420 ]
+239 silly gunzTarPerm extractEntry test/prepare.js
+240 silly gunzTarPerm modified mode [ 'test/prepare.js', 438, 420 ]
+241 silly gunzTarPerm extractEntry test/reader.js
+242 silly gunzTarPerm modified mode [ 'test/reader.js', 438, 420 ]
+243 silly gunzTarPerm extractEntry tests-settings.json
+244 silly gunzTarPerm modified mode [ 'tests-settings.json', 438, 420 ]
+245 silly lockFile 2e7bc1b3-xPlekkenNode-node-modules-oracle tar://C:\Users\menno_h\Documents\Aptana Studio 3 Workspace\FlexPlekkenNode\node_modules\oracle
+246 silly lockFile 2e7bc1b3-xPlekkenNode-node-modules-oracle tar://C:\Users\menno_h\Documents\Aptana Studio 3 Workspace\FlexPlekkenNode\node_modules\oracle
+247 silly lockFile 8dd943b3-m-cache-oracle-0-3-6-package-tgz tar://C:\Users\menno_h\AppData\Roaming\npm-cache\oracle\0.3.6\package.tgz
+248 silly lockFile 8dd943b3-m-cache-oracle-0-3-6-package-tgz tar://C:\Users\menno_h\AppData\Roaming\npm-cache\oracle\0.3.6\package.tgz
+249 info preinstall oracle@0.3.6
+250 verbose readDependencies using package.json deps
+251 verbose readDependencies using package.json deps
+252 silly resolved []
+253 verbose about to build C:\Users\menno_h\Documents\Aptana Studio 3 Workspace\FlexPlekkenNode\node_modules\oracle
+254 info build C:\Users\menno_h\Documents\Aptana Studio 3 Workspace\FlexPlekkenNode\node_modules\oracle
+255 verbose linkStuff [ false,
+255 verbose linkStuff   false,
+255 verbose linkStuff   false,
+255 verbose linkStuff   'C:\\Users\\menno_h\\Documents\\Aptana Studio 3 Workspace\\FlexPlekkenNode\\node_modules' ]
+256 info linkStuff oracle@0.3.6
+257 verbose linkBins oracle@0.3.6
+258 verbose linkMans oracle@0.3.6
+259 verbose rebuildBundles oracle@0.3.6
+260 info install oracle@0.3.6
+261 verbose unsafe-perm in lifecycle true
+262 info oracle@0.3.6 Failed to exec install script
+263 info C:\Users\menno_h\Documents\Aptana Studio 3 Workspace\FlexPlekkenNode\node_modules\oracle unbuild
+264 info preuninstall oracle@0.3.6
+265 info uninstall oracle@0.3.6
+266 verbose true,C:\Users\menno_h\Documents\Aptana Studio 3 Workspace\FlexPlekkenNode\node_modules,C:\Users\menno_h\Documents\Aptana Studio 3 Workspace\FlexPlekkenNode\node_modules unbuild oracle@0.3.6
+267 info postuninstall oracle@0.3.6
+268 error oracle@0.3.6 install: `node-gyp rebuild`
+268 error Exit status 1
+269 error Failed at the oracle@0.3.6 install script.
+269 error This is most likely a problem with the oracle package,
+269 error not with npm itself.
+269 error Tell the author that this fails on your system:
+269 error     node-gyp rebuild
+269 error You can get their info via:
+269 error     npm owner ls oracle
+269 error There is likely additional logging output above.
+270 error System Windows_NT 6.1.7601
+271 error command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "oracle"
+272 error cwd C:\Users\menno_h\Documents\Aptana Studio 3 Workspace\FlexPlekkenNode
+273 error node -v v0.10.23
+274 error npm -v 1.3.17
+275 error code ELIFECYCLE
+276 verbose exit [ 1, true ]

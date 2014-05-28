@@ -1,0 +1,19 @@
+prompt >> Creation of table DESKS
+create table DESKS
+(
+  ROOM_ID				number				not null,
+  DESK_NUMBER			number				not null,
+  DESK_DIMENSIONS		varchar2(100 char)	not null
+)
+/
+
+ALTER TABLE DESKS 
+ADD CONSTRAINT DESK_PK PRIMARY KEY ( ROOM_ID, DESK_NUMBER ) ;
+	
+ALTER TABLE DESKS
+ADD CONSTRAINT DESK_ROOM_FK
+	FOREIGN KEY (ROOM_ID)
+	REFERENCES ROOMS (ROOM_ID);
+		
+CREATE INDEX DESK_ROOM_FK_I
+	ON DESKS (ROOM_ID);

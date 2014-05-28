@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wlevs:config xmlns:wlevs="http://www.bea.com/ns/wlevs/config/application"
+              xmlns:jdbc="http://www.oracle.com/ns/ocep/config/jdbc">
+    <processor>
+        <name>RegisterOcpProcessor</name>
+        <rules>
+            <view id="OccupancyView"><![CDATA[
+            	select distinct cardId, deviceId, roomId, deskNum
+            	from RegisterInputChannel
+            	]]>
+            </view>
+            <query id="OccupancyQuery">
+            	<![CDATA[ select cardId, deviceId, roomId, deskNum
+            			from OccupancyView [RANGE 30 SECONDS SLIDE 30 SECONDS]
+            			group by cardId, deviceId, roomId, deskNum
+            	]]>
+            </query>
+        </rules>
+    </processor>
+</wlevs:config>
+

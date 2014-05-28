@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:osgi="http://www.springframework.org/schema/osgi"
+       xmlns:wlevs="http://www.bea.com/ns/wlevs/spring"
+       xmlns:jdbc="http://www.oracle.com/ns/ocep/jdbc"
+       xmlns:spatial="http://www.oracle.com/ns/ocep/spatial"
+       xsi:schemaLocation="
+  http://www.springframework.org/schema/beans
+  http://www.springframework.org/schema/beans/spring-beans.xsd
+  http://www.springframework.org/schema/osgi
+  http://www.springframework.org/schema/osgi/spring-osgi.xsd
+  http://www.bea.com/ns/wlevs/spring
+  http://www.bea.com/ns/wlevs/spring/spring-wlevs-v11_1_1_7.xsd
+  http://www.oracle.com/ns/ocep/jdbc
+  http://www.oracle.com/ns/ocep/jdbc/ocep-jdbc.xsd
+  http://www.oracle.com/ns/ocep/spatial
+  http://www.oracle.com/ns/ocep/spatial/ocep-spatial.xsd">
+
+    <osgi:reference id="httpServiceRef" interface="org.osgi.service.http.HttpService"/>
+	<wlevs:event-type-repository>
+		<wlevs:event-type type-name="RegisterOccupancyEvent">
+			<wlevs:class>event.RegisterOccupancyEvent</wlevs:class>
+		</wlevs:event-type>
+		<wlevs:event-type type-name="UnregisterOccupancyEvent">
+			<wlevs:class>event.UnregisterOccupancyEvent</wlevs:class>
+		</wlevs:event-type>
+	</wlevs:event-type-repository>
+	<wlevs:adapter id="OccupancyAdapter" class="adapter.OccupancyAdapter">
+		<wlevs:listener ref="RegisterInputChannel" />
+		<wlevs:listener ref="UnregisterInputChannel" />
+		<wlevs:instance-property name="rootContext"
+			value="/occupancy" />
+		<wlevs:instance-property name="httpService"
+			ref="httpServiceRef" />
+	</wlevs:adapter>
+	<wlevs:channel id="RegisterInputChannel" event-type="RegisterOccupancyEvent">
+		<wlevs:listener ref="RegisterOcpProcessor" />
+	</wlevs:channel>
+	<wlevs:channel id="UnregisterInputChannel" event-type="UnregisterOccupancyEvent">
+		<wlevs:listener ref="DatabaseAdapter" />
+	</wlevs:channel>
+	<wlevs:processor id="RegisterOcpProcessor">
+		<wlevs:listener ref="RegisterOutputChannel" />
+	</wlevs:processor>
+	<wlevs:channel id="RegisterOutputChannel" event-type="RegisterOccupancyEvent">
+		<wlevs:listener ref="OccupancyListener" />
+	</wlevs:channel>
+	<wlevs:event-bean id="OccupancyListener" class="bean.OccupancyListener">
+		<wlevs:listener ref="PublishToBAM" />
+		<wlevs:listener ref="DatabaseAdapter" />
+		<wlevs:instance-property name="rootContext"
+			value="/occupancies" />
+        <wlevs:instance-property name="httpService" ref="httpServiceRef" />
+	</wlevs:event-bean>
+	<wlevs:adapter id="PublishToBAM" provider="jms-outbound">
+		<wlevs:instance-property name="converterBean" ref="messageConverter"/>
+	</wlevs:adapter>
+	<bean id="messageConverter" class="bean.MessageConverter">
+	</bean>
+	<wlevs:adapter id="DatabaseAdapter" class="adapter.DatabaseAdapter">
+		<wlevs:resource property="dataSource" name="SmartwpDS"/>
+	</wlevs:adapter>
+</beans>
+

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:wlevs="http://www.bea.com/ns/wlevs/deployment"
+  xsi:schemaLocation="
+  http://www.springframework.org/schema/beans
+  http://www.springframework.org/schema/beans/spring-beans.xsd
+  http://www.bea.com/ns/wlevs/deployment
+  http://www.bea.com/ns/wlevs/deployment/deployment.xsd">
+<wlevs:deployment id="SmartWorkplaceEmb" location="file:/root/OEP/user_projects/domains/ocep_domain/defaultserver/applications/SmartWorkplaceEmb/SmartWorkplaceEmb.jar" state="start" />
+</beans>

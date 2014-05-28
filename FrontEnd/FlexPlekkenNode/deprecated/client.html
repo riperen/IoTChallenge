@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="localhost:1337/socket.io/socket.io.js"></script>
+		<script src="js-svg/Room.js"></script>
+		<script src="js-svg/Desk.js"></script>
+		<script src="js-svg/Main.js"></script>	</head>
+		<script type="text/javascript">
+			var socketio = io.connect("127.0.0.1:1337");
+
+			// socketio.on("refresh_client", function(data) {
+			// 	alert('Reload page');
+			// });
+
+		</script>
+	</head>
+	<body>
+		<svg id="room" width="600" height="600" style="background-color: #fff; border: 1px solid black;">
+		</svg>
+		<script type="text/javascript">init();</script>
+	</body>
+</html>
